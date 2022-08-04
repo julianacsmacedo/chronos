@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  all: unset;
+  display: flex;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: #ffffff;
+  width: 40%;
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  /* position: absolute; */
+  /* width: 50%;
+    height: 50%; */
+  /* left: 15%;
+  top: 424px; */
+  font-family: "Farro", sans-serif;
+  font-weight: 400;
+  font-size: 7.5rem;
+  line-height: 7.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+h2 {
+  position: absolute;
+  /* height: 72px; */
+  left: 79px;
+  top: 528px;
+
+  font-family: "Iceland", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+img {
+  width: fit-content;
+  position: absolute;
+  width: 358px;
+  height: 79px;
+  left: 902px;
+  top: 320px;
+}
+
+/* * {
+    all: unset;
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+} */
+
+.login {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chronos {
+  all: unset;
+  background-color: #ff0137;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-left: 0%;
+}
