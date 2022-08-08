@@ -23,6 +23,6 @@ EMAIL_HOST = config('EMAIL_HOST', default='localhost')
 EMAIL_PORT = config('EMAIL_PORT', default=25, cast=int)
 
 urlpatterns = [
+    path('', include('gerenciamento.urls')),
     path('admin/', admin.site.urls),
-    path('gen/', include('gerenciamento.urls'))
 ]
