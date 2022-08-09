@@ -1,24 +1,28 @@
 body {
     all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
+/* ESTILIZAÇÃO NAVBAR */
 nav {
-    all: unset;
-    display: flex;
-    position: fixed;
     background-color: #FF0137;
+    display: flex;
     position: absolute;
     width: 100%;
     height: 10vh;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    top: 0;
 }
 
 nav > button {
     border-radius: 14px;
     display: flex;
     align-items: flex-start;
-    margin-right: 40px;
+    /* margin-right: 33px; */
     box-sizing: border-box;
     padding: 8px 16px;
     gap: 4px;
@@ -45,8 +49,8 @@ nav > img {
 }
 
 nav > p {
-    margin-left: 30px;
     color: #FFFFFF;
+    margin-left: -1.375rem;
 }
 
 select {
@@ -54,10 +58,10 @@ select {
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    width: 200px;
-    height: 40px;
+    width: 30%;
+    height: 50%;
     left: 344px;
-    top: 36px;
+    top: 2.25rem;
     border-radius: 10px;
     border-color: #FF0137;
     color: #FF0137;
@@ -65,7 +69,7 @@ select {
 
 select > option {
     text-align: center;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -73,5 +77,29 @@ select > option {
     flex: none;
     order: 1;
     flex-grow: 1;
+}
 
+nav > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.688rem;
+}
+
+/* ESTILIZAÇÃO  SECTIONS*/
+.dot-green {
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+main {
+    display: grid;
+}
+
+main > section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
