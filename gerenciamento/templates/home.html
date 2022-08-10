@@ -10,11 +10,13 @@
 
 <body>
         <nav>
-            <span class="dot-green"></span>
-            <p>NOME SOBRENOME</p>
+            <div class="profile">
+                <span class="dot green"></span>
+                <p class="name">NOME SOBRENOME</p>
+            </div>
             <select name="status" id="">
                 <option value="">Online</option>
-                <option value="">Off</option>
+                <option value="">Offline</option>
                 <option value="">Refeição</option>
                 <option value="">Pausa</option>
                 <option value="">Férias</option>
@@ -32,21 +34,46 @@
                 <img src="../static/assets/sair_logo.svg" alt="">
             </button>
         </nav>
-        <main >
-            <section>
-                <h2>SECTION 2</h2>
+        <main>
+            <section id="monitor">
+                <span class="dot green"></span>
+                <p>x Online</p>
+                <span class="dot red"></span>
+                <p>x Onffline</p>
+                <span class="dot blue"></span>
+                <p>x Férias</p>
             </section>
-            <section>
-                <h1>SECTION 3</h1>
+            <section class="title">
+                <h3>T1</h3>
+                <h3>T2</h3>
+                <h3>T3</h3>
             </section>
-            <section>
-                <h2>SECTION 2</h2>
+            <section class="turno">
+                <div id="card"></div>
+                <div id="card"></div>
+                <div id="card"></div>
             </section>
+            <section class="c">
+                <h3 class="space">C1</h3>
+                <h3 class="space2">C2</h3>
+            </section>
+            <section class="comercial">
+                <div id="card2" class="space"></div>
+                <div id="card2" class="space2"></div>
+            </section>
+            
         </main>
-        
-        <!-- <footer>
-            <span class="dot-green"></span>
-        </footer> -->
-    
+    <footer>
+            <span class="dot green"></span>
+            <p>Online</p>
+            <span class="dot red"></span>
+            <p>Onffline</p>
+            <span class="dot orange"></span>
+            <p>Refeição</p>
+            <span class="dot blue"></span>
+            <p>Férias</p>
+            <span class="dot yellow"></span>
+            <p>Pausa</p>
+    </footer>
 </body>
 </html>

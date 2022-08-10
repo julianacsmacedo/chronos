@@ -22,7 +22,6 @@ nav > button {
     border-radius: 14px;
     display: flex;
     align-items: flex-start;
-    /* margin-right: 33px; */
     box-sizing: border-box;
     padding: 8px 16px;
     gap: 4px;
@@ -31,6 +30,7 @@ nav > button {
     background: #FFFFFF;
     border: 1px solid #FF0137;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 nav > button:hover, focus {
@@ -39,44 +39,52 @@ nav > button:hover, focus {
     transform: scale(1.2);
 }
 
-nav > img {
-    width: 16px;
-    height: 16px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin-right: 20
-}
-
 nav > p {
     color: #FFFFFF;
-    margin-left: -1.375rem;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    padding: 2px;
+}
+
+.name {
+    padding-left: 0.5rem;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
 }
 
 select {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
-    width: 30%;
-    height: 50%;
-    left: 344px;
-    top: 2.25rem;
+    width: 21.875rem;
+    height: 2.5rem;
+    justify-items: center;
     border-radius: 10px;
     border-color: #FF0137;
+    background-color: #fff;
     color: #FF0137;
+    cursor: pointer;
 }
 
 select > option {
     text-align: center;
     font-family: 'Inter', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
     flex: none;
     order: 1;
     flex-grow: 1;
+    cursor: pointer;
 }
 
 nav > span {
@@ -87,19 +95,106 @@ nav > span {
 }
 
 /* ESTILIZAÇÃO  SECTIONS*/
-.dot-green {
-    height: 25px;
-    width: 25px;
-    background-color: green;
-    border-radius: 50%;
-    display: inline-block;
-}
 main {
     display: grid;
 }
 
 main > section {
     display: grid;
+}
+
+.turno, .title {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 100px;
+    justify-items: center;
+}
+
+.comercial, .c {
+    grid-template-columns: 2fr 2fr;
+    justify-items: center;
+}
+
+.space {
+    margin-left: 10.625rem;
+}
+
+.space2 {
+    margin-right: 10.625rem;
+}
+
+.title, .c {
+    margin-bottom: -10px;
+}
+
+.c{
+    margin-top: 2vh;
+}
+
+#card {
+    box-sizing: border-box;
+    width: 25vw;
+    height: 30vh;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#card2 {
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 25vw;
+    height: 30vh;
+}
+
+#monitor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 1.25rem;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+}
+
+footer > p, main > section > p {
+    margin: 0 1rem 0 1rem;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.green {
+    background-color: #008E41;
+}
+
+.red {
+    background-color: #FF0137;
+}
+
+.orange {
+    background-color:  #FA6618;
+}
+
+.blue {
+    background-color: #0533FF;
+}
+
+.yellow {
+    background-color:  #FFBC00;
 }
