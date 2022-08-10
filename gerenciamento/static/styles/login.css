@@ -1,0 +1,98 @@
+body {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "chronos login";
+  background-color: #ff0137;
+  border: 1px solid #ff0137;
+  border-radius: 25px;
+}
+
+.chronos {
+  grid-area: chronos;
+  padding: 21rem 5rem;
+  m
+}
+
+.login {
+  grid-area: login;
+  background-color: #ffffff;
+  border-radius: 0px 25px 25px 0px;
+  padding: 16rem 22rem;
+}
+
+div {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Farro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.5rem;
+  line-height: 0rem;
+  text-align: center;
+  color: #ffffff;
+  margin-block: 0.5em;
+}
+
+.subtitle {
+  font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin: 0px;
+  text-align: center;
+  color: #ffffff;
+}
+
+input {
+  padding: 15px;
+  border-radius: 0.313rem;
+  border: none;
+  font-size: 1.25rem;
+  color: black;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+input:focus {
+  outline: none;
+  color: black;
+}
+
+::placeholder {
+  color: #b1b1b1;
+}
+
+button {
+  background-color: #ff8723;
+  width: 262px;
+  height: 66px;
+  font-family: "Inter";
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.813rem;
+  text-align: center;
+  border: solid #ff8723;
+  border-radius: 0.313rem;
+}
+
+button:hover {
+  background-color: rgba(255, 135, 35, 80%);
+  cursor: pointer;
+  border-radius: 0.313rem;
+  border-color: rgba(255, 135, 35, 80%);
+  outline: none;
+  border: none;
+}
