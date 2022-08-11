@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Dados_Status():
     user_name = models.CharField(
         max_length=150,
