@@ -104,12 +104,20 @@ main > section {
 }
 
 .turno, .title {
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 0px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 100px;
     justify-items: center;
 }
 
 .comercial, .c {
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 0px;
     grid-template-columns: 2fr 2fr;
     justify-items: center;
 }
