@@ -23,18 +23,18 @@
       </section>
 
       <section class="login">
-        <div>
-          <img
+          <form action="{% url 'login' %}" method="POST">{% csrf_token %}
+            <img
             src="../static/assets/americanas_logo.svg"
             alt="logo americanas"
           />
-          <input
+            <input
             type="text"
-            placeholder="Endereço de e-mail"
+            placeholder="Username"
           />
           <input type="password" placeholder="Senha" />
-          <button>Entrar</button>
-        </div>
+          <button type="submit">Entrar</button>
+          </form>
       </section>
     </main>
   </body>

@@ -29,11 +29,12 @@ main {
   grid-gap: 1rem;
 }
 
-div {
+form {
   display: grid;
   justify-items: center;
   align-items: center;
   justify-content: center;
+  align-content: center;
   grid-template-rows: 7rem 4rem 4rem 7rem;
   margin-left: 22rem;
   margin-right: 22rem;
