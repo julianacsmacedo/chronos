@@ -10,19 +10,17 @@ def index(request):
     return render(request, 'login.html')
 
 def login(request):
-    # user = User.objects.all()
     if request.method == "GET":
         return render(request, 'login.html')
     else:
-        user = User.objects.all()
         username = request.POST.get('username')
         password = request.POST.get('password')
 
         user = authenticate(request, username=username, password=password)
 
         if user is not None:
-            login_django(request, User)
-            return HttpResponse('DEU CERTO')
+            login_django(request, user)
+            return render(request, 'home.html')
         else:
             return HttpResponse('Username e/ou senha errada')
 
