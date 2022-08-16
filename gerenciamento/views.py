@@ -1,13 +1,36 @@
 from django.shortcuts import HttpResponse, render
+from django.contrib.auth import authenticate
+from django.contrib.auth.models import User
+from django.contrib.auth import login as login_django
+from django.contrib.auth.decorators import login_required
 
 def index(request):
-    return render(request, 'gen/login.html')
-# Create your views here.
+    if request.user.is_authenticated:
+        return render(request, 'home.html')
+    return render(request, 'login.html')
 
 def login(request):
+    # user = User.objects.all()
     if request.method == "GET":
         return render(request, 'login.html')
+    else:
+        user = User.objects.all()
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+
+        user = authenticate(request, username=username, password=password)
+
+        if user is not None:
+            login_django(request, User)
+            return HttpResponse('DEU CERTO')
+        else:
+            return HttpResponse('Username e/ou senha errada')
 
 def home(request):
-    if request.method == "GET":
+    if request.user.is_authenticated:
         return render(request, 'home.html')
+    return render (request, 'login.html')
+
+@login_required(login_url="/login")
+def home(request):
+    return HttpResponse('foi ????')
