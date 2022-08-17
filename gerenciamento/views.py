@@ -22,7 +22,7 @@ def login(request):
 
         if user is not None:
             login_django(request, user)
-            return render(request, 'home.html')
+            return redirect('home')
         else:
             messages.error(request,'usuário e/ou senha inválida')
             return redirect('login')
@@ -31,7 +31,7 @@ def login(request):
 def home(request):
     if request.user.is_authenticated:
         return render(request, 'home.html')
-    return render (request, 'login.html')
+    return render(request, 'login.html')
 
 def logout(request):
     auth.logout(request)

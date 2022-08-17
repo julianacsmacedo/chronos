@@ -1,9 +1,12 @@
 from django.db import models
+from django.conf import settings
 
 class Dados_Status(models.Model):
-    user_name = models.CharField(
-        max_length=150,
-        unique=True)
+    user_name = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        default='',
+    )
 
     LOAN_STATUS = (
         ('Online', 'Online'),
