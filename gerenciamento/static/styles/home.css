@@ -41,6 +41,7 @@ nav > button:hover, focus {
 
 nav > p {
     color: #FFFFFF;
+    font-weight: bold;
 }
 
 .profile {
@@ -53,7 +54,7 @@ nav > p {
 
 .name {
     padding-left: 0.5rem;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 29px;
@@ -97,6 +98,7 @@ nav > span {
 /* ESTILIZAÇÃO  SECTIONS*/
 main {
     display: grid;
+    margin-top: 3.5rem;
 }
 
 main > section {
@@ -158,6 +160,7 @@ main > section {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 footer {
@@ -172,9 +175,9 @@ footer {
 
 footer > p, main > section > p {
     margin: 0 1rem 0 1rem;
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.25em;
     line-height: 20px;
     display: flex;
     align-items: center;
