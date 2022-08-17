@@ -3,6 +3,8 @@ from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from django.contrib.auth import login as login_django
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import redirect
+from django.contrib import auth, messages
 
 def index(request):
     if request.user.is_authenticated:
@@ -22,7 +24,8 @@ def login(request):
             login_django(request, user)
             return render(request, 'home.html')
         else:
-            return HttpResponse('Username e/ou senha errada')
+            messages.error(request,'usuário e/ou senha inválida')
+            return redirect('login')
 
 @login_required(login_url="/login")
 def home(request):
@@ -30,6 +33,7 @@ def home(request):
         return render(request, 'home.html')
     return render (request, 'login.html')
 
+def logout(request):
+    auth.logout(request)
+    return redirect('index')
 
-# def home(request):
-#     return HttpResponse('foi ????')

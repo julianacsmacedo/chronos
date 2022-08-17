@@ -105,3 +105,9 @@ button:hover {
   outline: none;
   border: none;
 }
+
+p {
+  color: #ff0137;
+  font-weight: bold;
+  margin: 0;
+}
