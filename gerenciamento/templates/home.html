@@ -22,7 +22,7 @@
         <nav>
             <div class="profile">
                 <span class="dot green"></span>
-                <p class="name">{{title}}</p>
+                <p class="name">{{user.username}}</p>
             </div>
             <select name="status" id="">
                 <option value="">Online</option>
@@ -40,7 +40,7 @@
             </select>
             <p>Última atualização xx/xx/xxxx às xx:xx</p>
             <button>
-                SAIR
+                <a href="{% url 'logout' %}">SAIR</a>
                 <img src="../static/assets/sair_logo.svg" alt="">
             </button>
         </nav>

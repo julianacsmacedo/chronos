@@ -36,7 +36,11 @@
           />
           <input name="password" type="password" placeholder="Senha" />
           <button type="submit">Entrar</button>
+          {% for message in messages %}
+            <p id="messages">{{message}}</p>
+          {% endfor %}
           </form>
+          
           <div></div>
       </section>
     </main>
