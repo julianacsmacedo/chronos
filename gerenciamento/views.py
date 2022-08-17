@@ -24,11 +24,12 @@ def login(request):
         else:
             return HttpResponse('Username e/ou senha errada')
 
+@login_required(login_url="/login")
 def home(request):
     if request.user.is_authenticated:
         return render(request, 'home.html')
     return render (request, 'login.html')
 
-@login_required(login_url="/login")
-def home(request):
-    return HttpResponse('foi ????')
+
+# def home(request):
+#     return HttpResponse('foi ????')
