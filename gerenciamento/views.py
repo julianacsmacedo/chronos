@@ -33,17 +33,18 @@ def login(request):
 def home(request):  
     lista = []
     querySet = Dados_Status.objects.filter()
-
+    print(querySet)
     for value in querySet:
         lista.append(
             {
-                'first_name':value['first_name'],
-                'last_name':value['last_name'],
-                'turno':value['turno'],
-                'status':value['status']
+                'first_name': value['first_name'],
+                'last_name': value['last_name'],
+                'turno': value['turno'],
+                'status': value['status']
             }
-
         )
+
+
         
     # teste = LOAN_STATUS
     # if request.method=="POST":
@@ -55,7 +56,7 @@ def home(request):
     # # status_usuario = user.status
     # if request.user.is_authenticated:
     #     return render(request, 'home.html')
-    return render(request, 'login.html', lista)
+    return render(request, 'home.html', lista)
 
 def logout(request):
     auth.logout(request)
